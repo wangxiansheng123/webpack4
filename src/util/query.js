@@ -1,6 +1,5 @@
 import md5 from '../plugins/md5.min';
 
-
 //把url的参数部分转化成json对象
 export const parseQueryString = (url) => {
   let reg_url = /^[^\?]+\?([\w\W]+)$/,
@@ -15,7 +14,6 @@ export const parseQueryString = (url) => {
   }
   return ret;
 };
-
 
 //md5加密
 export const encription = (data) => {

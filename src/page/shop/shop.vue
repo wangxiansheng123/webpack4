@@ -733,6 +733,8 @@
           this.showCartList = false;
         }
       },
+
+
       //商品、评论切换状态
       changeShowType(value) {
         if (value === 'rating') {
