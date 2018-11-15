@@ -12,6 +12,7 @@ let baseUrl = '';
 let http_url = '';
 let routerMode = 'history';
 let imgBaseUrl = 'http://images.cangdu.org/';
+let BaseUrl = 'http://10.20.1.1/';
 
 
 if (process.env.NODE_ENV == 'development') {
