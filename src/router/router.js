@@ -70,7 +70,7 @@ export default [{
     {
       path: '/msite',
       component: msite,
-      meta: {keepAlive: true},
+      meta: { keepAlive: true },
     },
     //特色商铺列表页
     {
@@ -152,14 +152,14 @@ export default [{
           }]
         }]
       },
-        {
-          path: 'setusername',
-          component: setusername,
-        },
-        {
-          path: 'service', //服务中心
-          component: service,
-        },]
+      {
+        path: 'setusername',
+        component: setusername,
+      },
+      {
+        path: 'service', //服务中心
+        component: service,
+      },]
     },
     //修改密码页
     {

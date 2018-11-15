@@ -1,5 +1,5 @@
-import {baseUrl} from './env'
-import {encription, parseQueryString} from '../util/query';
+import { baseUrl } from './env'
+import { encription, parseQueryString } from '../util/query';
 
 
 export default async (url = '', data = {}, type = 'GET', method = 'fetch') => {
@@ -43,11 +43,11 @@ export default async (url = '', data = {}, type = 'GET', method = 'fetch') => {
 
     if (type == 'POST') {
 
-        url = url + '?sign=' + encription(data);
+      url = url + '?sign=' + encription(data);
 
-        Object.defineProperty(requestConfig, 'body', {
-          value: JSON.stringify(data)
-        })
+      Object.defineProperty(requestConfig, 'body', {
+        value: JSON.stringify(data)
+      })
     }
 
     try {

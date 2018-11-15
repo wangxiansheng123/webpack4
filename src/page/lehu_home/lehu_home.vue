@@ -60,10 +60,11 @@
 
     created() {
     },
+
     mounted() {
       this.initData();
     },
-
+    //加载组件
     components: {
       slider,
       footGuide,

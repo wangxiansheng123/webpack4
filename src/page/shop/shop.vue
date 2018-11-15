@@ -758,6 +758,7 @@
 </script>
 
 <style lang="scss" scoped>
+  <!--加载公共样式-->
   @import '../../style/mixin';
 
   @keyframes mymove {

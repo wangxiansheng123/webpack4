@@ -2,7 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import routes from './router/router'
 import store from './store/'
-import {routerMode} from './config/env'
+import { routerMode } from './config/env'
 import './config/rem'
 import FastClick from 'fastclick'
 
@@ -24,7 +24,7 @@ const router = new VueRouter({
       if (from.meta.keepAlive) {
         from.meta.savedPosition = document.body.scrollTop;
       }
-      return {x: 0, y: to.meta.savedPosition || 0}
+      return { x: 0, y: to.meta.savedPosition || 0 }
     }
   }
 });

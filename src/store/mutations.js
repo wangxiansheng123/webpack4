@@ -30,9 +30,9 @@ import {
   BUY_CART,
 } from './mutation-types.js'
 
-import {setStore, getStore} from '../config/mUtils'
+import { setStore, getStore } from '../config/mUtils'
 
-import {baseUrl} from 'src/config/env'
+import { baseUrl } from 'src/config/env'
 
 export default {
   // 记录当前经度纬度
@@ -78,7 +78,7 @@ export default {
         "stock": stock
       };
     }
-    state.cartList = {...cart};
+    state.cartList = { ...cart };
     //存入localStorage
     setStore('buyCart', state.cartList);
   },
@@ -99,7 +99,7 @@ export default {
     if (item && item[food_id]) {
       if (item[food_id]['num'] > 0) {
         item[food_id]['num']--;
-        state.cartList = {...cart};
+        state.cartList = { ...cart };
         //存入localStorage
         setStore('buyCart', state.cartList);
       } else {
@@ -118,7 +118,7 @@ export default {
   //清空当前商品的购物车信息
   [CLEAR_CART](state, shopid) {
     state.cartList[shopid] = null;
-    state.cartList = {...state.cartList};
+    state.cartList = { ...state.cartList };
     setStore('buyCart', state.cartList);
   },
   // 记录用户信息
@@ -137,14 +137,14 @@ export default {
       return
     }
     if (!info.message) {
-      state.userInfo = {...info};
+      state.userInfo = { ...info };
     } else {
       state.userInfo = null;
     }
   },
   //修改用户名
   [RETSET_NAME](state, username) {
-    state.userInfo = Object.assign({}, state.userInfo, {username})
+    state.userInfo = Object.assign({}, state.userInfo, { username })
   },
   //保存商铺id
   [SAVE_SHOPID](state, shopid) {
@@ -231,7 +231,7 @@ export default {
   },
   //保存所选问题标题和详情
   [SAVE_QUESTION](state, question) {
-    state.question = {...question};
+    state.question = { ...question };
   },
   //增加地址
   [ADD_ADDRESS](state, obj) {

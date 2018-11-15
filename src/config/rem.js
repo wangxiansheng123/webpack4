@@ -1,3 +1,4 @@
+//单位初始化
 (function (doc, win) {
   var docEl = doc.documentElement,
     resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
@@ -10,3 +11,7 @@
   win.addEventListener(resizeEvt, recalc, false);
   doc.addEventListener('DOMContentLoaded', recalc, false);
 })(document, window);
+
+
+
+

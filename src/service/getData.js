@@ -1,5 +1,5 @@
 import fetch from '../config/fetch'
-import {getStore} from '../config/mUtils'
+import { getStore } from '../config/mUtils'
 
 /**
  * 获取首页默认地址
@@ -311,16 +311,16 @@ export const rePostVerify = (cart_id, sig, type) => fetch('/v1/carts/' + cart_id
  */
 
 export const validateOrders = ({
-                                 user_id,
-                                 cart_id,
-                                 address_id,
-                                 description,
-                                 entities,
-                                 geohash,
-                                 sig,
-                                 validation_code,
-                                 validation_token
-                               }) => fetch('/v1/users/' + user_id + '/carts/' + cart_id + '/orders', {
+  user_id,
+  cart_id,
+  address_id,
+  description,
+  entities,
+  geohash,
+  sig,
+  validation_code,
+  validation_token
+}) => fetch('/v1/users/' + user_id + '/carts/' + cart_id + '/orders', {
   address_id,
   come_from: "mobile_web",
   deliver_time: "",
@@ -393,7 +393,7 @@ export const exChangeHongbao = (id, exchange_code, captcha_code) => fetch('/v1/u
  * 获取用户信息
  */
 
-export const getUser = () => fetch('/v1/user', {user_id: getStore('user_id')});
+export const getUser = () => fetch('/v1/user', { user_id: getStore('user_id') });
 
 
 /**

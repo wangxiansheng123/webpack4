@@ -1,4 +1,4 @@
-import  Vue from 'vue'
+import Vue from 'vue'
 import Vuex from 'vuex'
 import mutations from './mutations'
 import actions from './action'
@@ -35,4 +35,4 @@ const state = {
   cartPrice: null, //会员卡价格
 };
 
-export default new Vuex.Store({state, getters, actions, mutations,})
+export default new Vuex.Store({ state, getters, actions, mutations, })
