@@ -13,7 +13,7 @@ let http_url = '';
 let routerMode = 'history';
 let imgBaseUrl = 'http://images.cangdu.org/';
 
-
+//测试环境的配置
 if (process.env.NODE_ENV == 'development') {
 
   baseUrl = 'http://cangdu.org:8001';
